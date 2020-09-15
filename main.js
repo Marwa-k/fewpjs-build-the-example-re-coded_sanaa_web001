@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       errorMessage.innerHTML = "You encountered a random server error.  Please try again."
       modal.appendChild(errorMessage);
       showError();
-      setTimeout(() => {hideError(); modal.removeChild(errorMessage)}, 3000);
+      setTimeout(() => {hideError(); modal.removeChild(errorMessage)}, 5000);
     })
   })
 });
