@@ -9,7 +9,7 @@ let  colorOFHeart = {
   "" : "red"
 };
 
-const modal = document.querySelector('#modal')
+const modal =document.getElementById('modal')
 
 function hidesModalError() {
   modal.classList.add("hidden")
