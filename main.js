@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     mimicServerCall()
     .then( () => {
       event.target.innerText = event.target.innerText == EMPTY_HEART ? FULL_HEART : EMPTY_HEART;
-      heart.style.color = colorHeart[heart.style.color]
+      heart.style.color = colorOFHeart[heart.style.color]
     })
     .catch ( () => {
       let errorMessage = document.createElement('p')
