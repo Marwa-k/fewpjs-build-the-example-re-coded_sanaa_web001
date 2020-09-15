@@ -11,15 +11,15 @@ let  colorOFHeart = {
 
 const modal =document.getElementById('modal')
 
-function hidesModalError() {
+function hideError() {
   modal.classList.add("hidden")
 }
 
-function showModalError() {
+function showError() {
   modal.classList.remove("hidden")
 }
 
-hidesModalError()
+hideError()
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
       let errorMessage = document.createElement('p')
       errorMessage.innerHTML = "You encountered a random server error.  Please try again."
       modal.appendChild(errorMessage);
-      showModalError();
-      setTimeout(() => {hidesModalError(); modal.removeChild(errorMessage)}, 5000);
+      showError();
+      setTimeout(() => {hideError(); modal.removeChild(errorMessage)}, 5000);
     })
   })
 });
